@@ -1,6 +1,6 @@
 /*
   For Loop Iteration
-
+.
   Demonstrates the use of a for() loop.
   Lights multiple LEDs in sequence, then in reverse.
 
