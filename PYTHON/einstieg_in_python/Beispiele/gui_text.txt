@@ -1,0 +1,3 @@
+Ein Text-Widget ist eine mehrzeilige Textbox und dient zur Eingabe
+und Darstellung groesserer Textmengen. Gegenueber dem Entry-Widget
+bietet es mehr Moeglichkeiten zur Verarbeitung von Daten.
