@@ -1,5 +1,8 @@
 <?php
 $texto = "joao,maria,jose";
+
+echo $texto;
+
 $nomes = explode(",", $texto);
 
 echo "<pre>"; var_dump($nomes); echo "</pre>";
