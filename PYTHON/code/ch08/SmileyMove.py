@@ -3,7 +3,7 @@ import pygame                # Setup
 pygame.init()
 screen = pygame.display.set_mode([600,600])
 keep_going = True
-pic = pygame.image.load("CrazySmile.bmp")
+pic = pygame.image.load("cs.bmp")
 colorkey = pic.get_at((0,0))
 pic.set_colorkey(colorkey)
 picx = 0
