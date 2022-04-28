@@ -1,0 +1,13 @@
+Revenue Var % to Budget = DIVIDE([Revenue Var to Budget], [RevenueTY])
+Revenue Var to Budget = [RevenueTY]-[Revenue Budget]
+Revenue Budget = CALCULATE([Total Revenue], FILTER(Scenario, Scenario[Scenario]="Budget"))
+
+
+# of Customers = DISTINCTCOUNT([Customer Key])
+
+# of Products = DISTINCTCOUNT([Product Key])
+
+GM% = DIVIDE([Gross Margin],[Total Revenue])
+
+Total Revenue = SUM([Revenue])
+
