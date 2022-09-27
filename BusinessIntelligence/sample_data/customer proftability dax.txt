@@ -1,0 +1,11 @@
+# of Customers = DISTINCTCOUNT([Customer Key])
+# of Products = DISTINCTCOUNT([Product Key])
+COGS SPLY = CALCULATE([Total COGS],SAMEPERIODLASTYEAR('Date'[Date]))
+GM% = DIVIDE([Gross Margin],[Total Revenue])
+Gross Margin = [Total Revenue]-[Total COGS]
+
+Revenue Budget = CALCULATE([Total Revenue], FILTER(Scenario, Scenario[Scenario]="Budget"))
+Total COGS = [Sum of Material Costs]+[Sum of Labor Costs Variable]+[Sum of Taxes]+[Sum of Rev for Exp Travel]+[Sum of Travel Expenses]+[Sum of Cost Third Party]
+
+
+YTD Revenue = TOTALYTD(SUM([Revenue]),'Date'[Date])
