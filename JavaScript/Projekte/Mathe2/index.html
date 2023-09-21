@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  // Mathe
+  "use strict";
+  var zahl1 = Number(window.prompt("Gib eine Zahl ein:", ""));
+  var zahl2 = Number(window.prompt("Und gleich noch eine:", ""));
+  var operator = window.prompt("Und jetzt den Operator (+,-,*,/): ");
+  document.write ("Ergebnis = ");
+  if (operator == "+")
+    document.write(zahl1 + zahl2);
+  if (operator == "-")
+    document.write(zahl1 - zahl2);
+  if (operator == "*")
+    document.write(zahl1 * zahl2);
+  if (operator == "/") {
+    if (zahl2 != 0)
+      document.write(zahl1 / zahl2);
+    else
+      document.write(" nicht möglich!");
+  }
+</script>

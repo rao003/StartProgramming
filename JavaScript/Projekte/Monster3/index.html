@@ -1,0 +1,33 @@
+<meta charset="utf-8" />
+<script>
+  // Klassen
+  class Monster {
+    constructor(Name, Nature) {
+      // Attribute
+      this.name = Name;
+      this.nature = Nature;
+    }
+    // Methoden
+    type() {return("Monster");}
+    show() {
+      document.write("Name : " + this.name + "<br>");
+      document.write("Wesen: " + this.nature + "<br>");
+      document.write("Typ:   " + this.type() + "<br><br>");
+    }
+  }
+
+  class GMonster extends Monster {
+    type() {return("Geistes-Monster");}
+  }
+  class SMonster extends Monster {
+    type() {return("Seelen-Monster");}
+  }
+
+  //Hauptprogramm
+  var Frank = new Monster("Frankie", "ungewöhnlich");
+  Frank.show();
+  var Albert = new GMonster("Bertie", "nachdenklich");
+  Albert.show();
+  var Sigmund = new SMonster("Sigi", "einfühlsam");
+  Sigmund.show();
+</script>

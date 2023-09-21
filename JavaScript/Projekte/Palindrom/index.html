@@ -1,0 +1,12 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  var text1 = window.prompt("Schreib was, nur klein und ohne Leerzeichen: ", "");
+  var text2 = "";
+  var kette = text1.length;
+  for (var nr = 0; nr < kette; nr++)
+    text2 += text1[kette-nr-1];
+  document.write(text2 + "<br>");
+  if (text1 == text2)
+    document.write ("Palindrom");
+</script>

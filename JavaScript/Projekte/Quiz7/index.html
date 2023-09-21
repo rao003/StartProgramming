@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <style>
+      #LBL {
+        width: 375px; height: 20px; top: 20px; left: 50px;
+        position: fixed; padding: 5px 10px;
+        text-align: center;
+      }
+      #LST {
+        width: 370px; height: 55px; top: 70px; left: 50px;
+        position: fixed;
+      }
+      #BTN {
+        width: 70px; height: 30px; top: 160px; left: 50px;
+        position: fixed;
+      }
+      #INP {
+        width: 400px; height: 30px; top: 210px; left: 50px;
+        position: fixed;
+      }
+      #NEW { 
+        width: 120px; height: 30px; top: 160px; left: 130px; 
+        position: fixed;
+      }
+      #RES { 
+        width: 200px; height: 30px; top: 165px; left: 270px; 
+        position: fixed;
+      }
+    </style>
+
+    <fieldset id="LBL">
+      <label></label>
+    </fieldset>
+    <fieldset id="LST">
+      <input id="Nr1" type="checkbox" name="choice">
+      <label id="BTN1" for="Nr1"><br></label>
+      <input id="Nr2" type="checkbox" name="choice">
+      <label id="BTN2" for="Nr2"><br></label>
+      <input id="Nr3" type="checkbox" name="choice">
+      <label id="BTN3" for="Nr3"><br></label>
+    </fieldset>
+    <button id="BTN"; onclick="itemClick()">OK</button>
+    <!-- Datei öffnen -->
+    <input id="INP" type="file" onchange="readFile(this)">
+    <!-- Neue Aufgabe -->
+    <button id="NEW"; onclick="newClick()">Neue Vokabel</button>
+    <!-- Spielstand -->
+    <label id="RES"></label>
+    
+    <script src="quiz.js">
+    </script>
+
+  </body>
+</html>

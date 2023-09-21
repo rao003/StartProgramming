@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  var text = 
+  "Verprasse es nicht gleich, sondern lege es lieber an!";
+  var kapital = Math.floor(Math.random()*90000+10000);
+  window.alert
+  ("Du hast im Lotto " + kapital + " Euro gewonnen!");
+  window.alert(text);
+  var prozent = 
+  Number(window.prompt("Wie hoch soll der Zinssatz sein: ", ""));
+  var laufzeit = 0;
+  var zinsen;
+  while (kapital < 1000000) {
+    zinsen   = kapital * prozent / 100;
+    kapital  = kapital + zinsen;
+    laufzeit++;
+  }
+  document.write
+  ("Zum Millionär brauchst du " + laufzeit + " Jahre.");
+</script>

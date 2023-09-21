@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<script>
+  // Zahlenraten
+  "use strict";
+  var regel = " Ich denke mir eine Zahl zwischen 1 und 1000";
+  var zufall = Math.floor(Math.random()*1000+1);
+  window.alert(regel);
+  //window.alert(regel + " (" + zufall + ")");
+  var versuche = 0;
+  var eingabe = Number(window.prompt("Rate mal: ", ""));
+  while (eingabe != zufall) {
+    versuche = versuche + 1;
+    if (eingabe < zufall)  
+      eingabe = Number(window.prompt("Zu klein! Nochmal: ", ""));
+    if (eingabe > zufall)
+      eingabe = Number(window.prompt("Zu groß! Nochmal: ", ""));
+    if (eingabe == zufall) document.write("Richtig!");
+  }
+  document.write(" Du hast " + versuche + " mal geraten.");
+</script>

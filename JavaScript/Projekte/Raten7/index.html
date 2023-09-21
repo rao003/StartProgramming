@@ -1,0 +1,35 @@
+<meta charset="utf-8" />
+<script>
+  // Zahlenraten
+  "use strict";
+
+  var versuche;
+
+  function initGame() {
+    var regel = " Ich denke mir eine Zahl zwischen 1 und 1000";
+    window.alert(regel);
+    versuche = 0;
+  }
+
+  function playGame() { 
+    var zufall = Math.floor(Math.random()*1000+1);
+    var eingabe = Number(window.prompt("Rate mal: ", ""));
+    while (eingabe != zufall) {
+      versuche = versuche + 1;
+      if (eingabe < zufall)  
+        eingabe = Number(window.prompt("Zu klein! Nochmal: ", ""));
+      if (eingabe > zufall)
+        eingabe = Number(window.prompt("Zu groß! Nochmal: ", ""));
+      if (eingabe == zufall) document.write("Richtig!");
+    }
+  }
+  
+  function endGame() {
+    document.write(" Du hast " + versuche + " mal geraten.");
+  }
+
+  // Hauptprogramm
+  initGame();
+  playGame();
+  endGame();
+</script>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>  
+    <style>
+      #LBL1 {
+        width: 400px; height: 25px; top: 25px; left: 60px;
+        position: fixed; text-align: center;
+      }
+      #LBL2 {
+        width: 150px; height: 25px; top: 265px; left: 55px;
+        position: fixed;
+      }
+      #LBL3 {
+        width: 180px; height: 25px; top: 265px; left: 315px;
+        position: fixed;
+      }
+      #BTN1 {
+        width: 120px; height: 25px; top: 310px; left: 60px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 120px; height: 25px; top: 310px; left: 200px;
+        position: fixed;
+      }
+      #BTN3 {
+        width: 120px; height: 25px; top: 310px; left: 340px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="500" height="350" style="border:1px solid gray"></canvas>
+    <label id="LBL1">Schere-Stein-Papier</label>
+    <label id="LBL2">Dein Spielstand:  0/0</label>
+    <label id="LBL3">Spielstand Gegner:  0/0</label>
+    <button id="BTN1"; onclick="showScissors()">Schere</button>
+    <button id="BTN2"; onclick="showStone()">Stein</button>
+    <button id="BTN3"; onclick="showPaper()">Papier</button>
+    
+    <script src="game.js">
+    </script>
+
+  </body>
+</html>

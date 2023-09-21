@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <style>
+      #LBL {
+        width: 375px; height: 20px; top: 20px; left: 50px;
+        position: fixed; padding: 5px 10px;
+        text-align: center;
+      }
+      #BTN1 {
+        width: 400px; height: 30px; top: 70px; left: 50px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 400px; height: 30px; top: 110px; left: 50px;
+        position: fixed;
+      }
+      #BTN3 {
+        width: 400px; height: 30px; top: 150px; left: 50px;
+        position: fixed;
+      }
+      #INP {
+        width: 400px; height: 30px; top: 250px; left: 50px;
+        position: fixed;
+      }
+    </style>
+
+    <fieldset id="LBL">
+      <label></label>
+    </fieldset>
+    <button id="BTN1"; onclick="button1Click()"></button>
+    <button id="BTN2"; onclick="button2Click()"></button>
+    <button id="BTN3"; onclick="button3Click()"></button>
+    <!-- Datei öffnen -->
+    <input id="INP" type="file" onchange="readFile(this)">
+
+    <script src="quiz.js">
+    </script>
+
+  </body>
+</html>

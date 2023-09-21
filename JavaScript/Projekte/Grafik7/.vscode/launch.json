@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "edge",
+            "request": "launch",
+            "name": "Edge mit index.html starten",
+            "url": "file:///D:/JScript/Projekte/index.html"
+        
+        }
+    ]
+}
+

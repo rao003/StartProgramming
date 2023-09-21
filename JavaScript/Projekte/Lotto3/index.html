@@ -1,0 +1,17 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  // Kugel-Feld initialisieren
+  var kugel = [50];
+  var zufall;
+  for (var nr = 0; nr < 49; nr++) kugel[nr] = false;
+  for (var nr = 0; nr < 6; nr++) {
+    zufall = Math.floor(Math.random()*49+1);
+    while (kugel[zufall])
+      zufall = Math.floor(Math.random()*49+1);
+    // Benutzte Zahl als "gezogen" markieren
+    kugel[zufall] = true;
+    // Ziehung und Nummer anzeigen
+    document.write("Nr. " + (nr+1) + " => " + zufall + "<br>");
+  }
+</script>

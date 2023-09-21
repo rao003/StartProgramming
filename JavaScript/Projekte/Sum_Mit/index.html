@@ -1,0 +1,10 @@
+<meta charset="utf-8" />
+<script>
+  // Summe und Mittelwert
+  "use strict";
+  var summe = 0;
+  var max = Number(window.prompt("Summe bis ", ""));
+  for (var zahl = 0; zahl < max+1; zahl++) summe += zahl;
+  var mittel = summe / max;
+  document.write("Summe: " + summe + " ; Mittelwert: " + mittel);
+</script>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>  
+    <style>
+      #LBL {
+        width: 400px; height: 25px; top: 25px; left: 60px;
+        position: fixed; text-align: center;
+      }
+      #BTN1 {
+        width: 120px; height: 25px; top: 265px; left: 60px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 120px; height: 25px; top: 265px; left: 200px;
+        position: fixed;
+      }
+      #BTN3 {
+        width: 120px; height: 25px; top: 265px; left: 340px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="500" height="300" style="border:1px solid gray"></canvas>
+    <label id="LBL">Schere-Stein-Papier</label>
+    <button id="BTN1"; onclick="showScissors()">Schere</button>
+    <button id="BTN2"; onclick="showStone()">Stein</button>
+    <button id="BTN3"; onclick="showPaper()">Papier</button>
+    
+    <script src="game.js">
+    </script>
+
+  </body>
+</html>

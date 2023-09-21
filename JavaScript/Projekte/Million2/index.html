@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  var kapital = 
+  Number(window.prompt("Wie viel Geld willst du anlegen: ", ""));
+  var prozent = 
+  Number(window.prompt("Wie hoch soll der Zinssatz sein: ", ""));
+  var laufzeit = 0;
+  var zinsen;
+  while (kapital < 1000000) {
+    zinsen  = kapital * prozent / 100;
+    kapital = kapital + zinsen;
+    laufzeit++;
+  }
+  if (laufzeit > 0) {
+    document.write("Um Millionär zu werden, musst du das Geld ");
+    document.write(laufzeit + " Jahre auf der Bank braten lassen");
+  }
+  else
+    document.write("Willkommen im Club der Millionäre!");
+</script>

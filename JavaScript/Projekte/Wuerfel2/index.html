@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+
+  // Startwerte
+  document.write("Lass uns würfeln! <br><br>");
+  var deinWert = 0;
+  var meinWert = 0;
+  var wurf1, wurf2;
+
+  // Würfeln
+  for (var nr = 0; nr < 6; nr++) {
+    document.write((nr+1) + ". Runde <br>");
+    document.write("Du bist dran: ");
+    wurf1 = Math.floor(Math.random()*6+1);  // Dein Würfel rollt
+    document.write(wurf1 + "<br>");
+    document.write("  Ich bin dran: ");
+    wurf2 = Math.floor(Math.random()*6+1);  // Mein Würfel rollt
+    document.write(wurf2 + "<br>");
+    if (wurf1 > wurf2) deinWert = deinWert + 1;
+    if (wurf1 < wurf2) meinWert = meinWert + 1;
+    document.write(deinWert + " zu " + meinWert + "<br>");
+  }
+  // Auswerten
+  if (deinWert > meinWert)
+    document.write("<br> Du hast gewonnen");
+  else if (deinWert < meinWert)
+    document.write("<br> Ich habe gewonnen");
+  else
+    document.write("<br> Unentschieden");
+</script>

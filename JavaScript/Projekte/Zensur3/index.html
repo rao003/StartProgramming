@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  // Zensuren
+  "use strict";
+  var punkte = Number(window.prompt("Gib deine Punkte ein: ", ""));
+  document.write("Das ist ");
+  if (punkte >= 0 && punkte < 1)
+    document.write("ungenügend (6)");
+  if (punkte >= 1 && punkte < 4)
+    document.write("mangelhaft (5)")
+  if (punkte >= 4 && punkte < 7)
+    document.write("ausreichend (4)");
+  if (punkte >= 7 && punkte < 10)
+    document.write("befriedigend (3)");
+  if (punkte >= 10 && punkte < 13)
+    document.write("gut (2)");
+  if (punkte >= 13 && punkte <= 15)
+    document.write("sehr gut (1)");
+  if (punkte > 15 || punkte < 0)
+    document.write("ungültig (0)");
+</script>

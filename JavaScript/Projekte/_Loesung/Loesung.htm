@@ -1,0 +1,587 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Lösungen JavaScript</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+h4
+	{mso-style-link:"Überschrift 4 Zchn";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+em
+	{font-weight:bold;
+	font-style:normal;}
+p.Aufzhlung, li.Aufzhlung, div.Aufzhlung
+	{mso-style-name:Aufzählung;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;}
+span.Dateiname
+	{mso-style-name:Dateiname;
+	font-family:"Tahoma",sans-serif;
+	text-transform:uppercase;}
+p.BefehlListing, li.BefehlListing, div.BefehlListing
+	{mso-style-name:"Befehl\/Listing";
+	mso-style-link:"Befehl\/Listing Zchn";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:2.85pt;
+	font-size:11.0pt;
+	font-family:Courier;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+span.Schlssel
+	{mso-style-name:Schlüssel;
+	font-family:"Courier New";}
+span.berschrift4Zchn
+	{mso-style-name:"Überschrift 4 Zchn";
+	mso-style-link:"Überschrift 4";
+	font-family:"Arial",sans-serif;}
+span.BefehlListingZchn
+	{mso-style-name:"Befehl\/Listing Zchn";
+	mso-style-link:"Befehl\/Listing";
+	font-family:Courier;}
+p.Einschub, li.Einschub, div.Einschub
+	{mso-style-name:Einschub;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:18.0pt;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DE>
+
+<div class=WordSection1>
+
+<h1>Lösungen (JavaScript)</h1>
+
+<h2><span lang=X-NONE>1. Aller Anfang ist schwer?</span></h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Weil ein Browser – und in dem soll ja das Programm ausgeführt werden –
+erst mal eine HTML-Datei erwartet, also eine Datei mit HTML-Code, ist diese
+Einrahmung nötig. Dadurch weiß dann der Browser, dass die innenstehenden Anweisungen
+in JavaScript geschrieben sind.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>In <span class=Dateiname>launch.json</span> werden für den reibungslosen
+Programmablauf wichtige Daten gesammelt. Diese Datei wird von VS Code
+automatisch erzeugt, muss aber ab und zu bearbeitet werden.</p>
+
+<h4>Keine Aufgabe</h4>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><span lang=X-NONE>2. </span>Wenn und Dann und Mathe</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Für Eingabe und Ausgabe kann man in JavaScript <span class=Schlssel><span
+style='font-size:11.0pt'>window.prompt()</span></span> und <span
+class=Schlssel><span style='font-size:11.0pt'>document.write()</span></span> benutzen.
+Das sind aber nicht die einzigen Funktionen für diesen Zweck, du lernst später
+noch weitere kennen.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Nur auf den ersten Blick: Eine Zuweisung wie <span class=Schlssel><span
+style='font-size:11.0pt'>Zahl = 2 * 3</span></span> sieht aus wie eine
+Gleichung, aber auch <span class=Schlssel><span style='font-size:11.0pt'>Zahl =
+Zahl + 1</span></span> kann eine Zuweisung sein. Eine passende Gleichung gibt
+es nicht.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Der Operator mit einem einfachen Gleichheitszeichen (<span
+class=Schlssel><span style='font-size:11.0pt'>=</span></span>) ist für
+Zuweisungen zuständig, der Operator mit doppeltem Gleichheitszeichen (<span
+class=Schlssel><span style='font-size:11.0pt'>==</span></span>) für Vergleiche.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das Programmstück lässt sich mit <span class=Schlssel><span
+style='font-size:11.0pt'>else</span></span> vereinfachen:</p>
+
+<p class=BefehlListing>if (zahl == 0)</p>
+
+<p class=BefehlListing>  <span class=Schlssel>document.write</span>(&quot;Kein
+Kehrwert&quot;);</p>
+
+<p class=BefehlListing>else</p>
+
+<p class=BefehlListing>  <span class=Schlssel>document.write</span>(1/Zahl);</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das Programm liegt im Ordner <span class=Dateiname>kehrwert</span>.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Hierzu schau mal in den Ordner <span class=Dateiname>password</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>3<span lang=X-NONE>. Zensuren und Zufälle</span></h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Bei einem Vergleich, ob etwas kleiner (&lt;) oder größer (&gt;) ist,
+wird die Vergleichszahl <em>ausgeschlossen</em>. Soll die Vergleichszahl mit <em>einbezogen</em>
+werden, so verwendest du »&lt;=« oder »&gt;=«. Ein Beispiel: Die Bedingung x
+&lt; 5 erfüllen z.B. die positiven Zahlen 1, 2, 3, 4; für x &lt;= 5 gelten
+dagegen 1, 2, 3, 4 <em>und</em> 5.</p>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die Operation <span class=Schlssel><span style='font-size:11.0pt'>Anzahl
++ 1</span></span> zählt einen Wert um 1 herauf, <span class=Schlssel><span
+style='font-size:11.0pt'>Anzahl – 1</span></span> zählt um 1 »rückwärts«, <span
+class=Schlssel><span style='font-size:11.0pt'>Anzahl * 2</span></span>
+verdoppelt einen Wert.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Eine Zufallszahl für einen Würfel erzeugt man so:</p>
+
+<p class=Einschub><span class=Schlssel><span style='font-size:11.0pt'>wuerfel =
+Math.floor(Math.random()*6+1);</span></span></p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das Programm im Ordner <span class=Dateiname>zENSUR3</span> bietet das
+Bewertungsschemata für 0 bis 15 Punkte an.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ein paar Beispiele findest du im Ordner <span class=Dateiname>alter</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>4. <span lang=X-NONE>Geld-Spielereien</span></h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Es kommt zu einer Endlos-Schleife, weil <span class=Schlssel><span
+style='font-size:11.0pt'>Kapital</span></span> nie den gewünschten Wert
+erreicht.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle drei sind auf dem Bildschirm unsichtbar: Ein Leerzeichen ist ein
+kleiner Zwischenraum, der als einzelnes Zeichen gewertet wird (<span
+class=Schlssel><span style='font-size:11.0pt'>&quot; &quot;</span></span>).
+Eine Leerzeile ist sozusagen ein horizontaler Zwischenraum (zwischen zwei
+Zeilen). Und die Leerkette ist ein Text mit Nichts (<span class=Schlssel><span
+style='font-size:11.0pt'>&quot;&quot;</span></span>).</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Der Programm-Ordner hat den Namen <span class=Dateiname>mathe5</span>.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Dein Computer findet im Programmprojekt <span class=Dateiname>raten5</span>
+eine von dir ausgedachte Zahl heraus, wenn du ihn nicht betrügst.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Nach demselben System spielt der PC im Programmprojekt <span
+class=Dateiname>raten6</span> ohne zu mogeln gegen sich selbst.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>5. <span lang=X-NONE>Marke Eigenbau</span></h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Globale Variablen gelten und existieren überall im Programm, lokale
+Variablen nur innerhalb eines Blocks (Funktion, Kontrollstruktur).</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Als Parameter können Variablen verwendet werden, aber auch feste Werte
+(Konstanten).</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die Version mit den Strings liegt im Ordner <span class=Dateiname>tausch4</span>.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Im <span class=Dateiname>sum_mit</span>-Programm gibst du z.B. 10 ein,
+dafür bekommst du die Summe und den Mittelwert der ganzen Zahlen von 1 bis 10.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Siehe 2.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Hierfür gibt es keine Beispiele, ich überlasse es dir, welchen deiner
+Projekte du Funktionen verpassen möchtest. Vielleicht noch für Hallo noch
+Mathe?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>6. Klassen und Module</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Variablen, die in einer Klasse vereinbart werden, nennt man Attribute,
+in einer Klasse definierte Funktionen heißen Methoden.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Kapselung bedeutet, dass mehrere Elemente in einer Klasse
+zusammengefasst werden. Ein Zugriff von außen ist dann nur über eine
+Verknüpfung mit einem Objekt möglich, das als Instanz dieser Klasse erzeugt wurde.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle Elemente müssen mit ihrer Klasse über <span class=Schlssel><span
+style='font-size:11.0pt'>this</span></span> verknüpft werden.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Nicht viel, denn das <span class=Schlssel><span style='font-size:11.0pt'>new</span></span>
+ist wichtig und nötig. Unwichtig ist, ob »ungewöhnlich« falsch geschrieben ist.</p>
+
+<h4>Keine Aufgaben</h4>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>7. Buttons und Labels</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Dieser HTML-Text zeigt einen Button mit dem Text hallo (wobei eigentlich
+die erste Zeile genügt):</p>
+
+<p class=Einschub><span class=Schlssel><span lang=EN-US style='font-size:11.0pt'>&lt;button&gt;Hallo&lt;/button&gt;<br>
+&lt;script&gt; &lt;/script&gt;</span></span></p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Mit dem <span class=Schlssel><span style='font-size:11.0pt'>onclick</span></span>-Parameter
+verknüpft man eine Komponente (wie z.B. einen Button) mit einer
+Ereignis-Funktion in JavaScript.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Im <span class=Schlssel><span style='font-size:11.0pt'>style</span></span>-Bereich
+mit den Parametern <span class=Schlssel><span style='font-size:11.0pt'>height</span></span>
+und <span class=Schlssel><span style='font-size:11.0pt'>width</span></span>
+(Größe) sowie <span class=Schlssel><span style='font-size:11.0pt'>left</span></span>
+und <span class=Schlssel><span style='font-size:11.0pt'>top</span></span> (Position).
+Wichtig ist, dass alles mit einem ID-Namen verknüpft ist.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Dazu dient die Methode <span class=Schlssel><span style='font-size:11.0pt'>document</span></span>.<span
+class=Schlssel><span style='font-size:11.0pt'>getElementById()</span></span>.</p>
+
+<h4>Aufgabe</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Einen Lösungsvorschlag findest du in <span class=Dateiname>horoskop1</span>.
+Passende Wahrsagetexte musst du allerdings selbst einfügen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>8. Hallo, wie geht's?</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Wenn ein Eintrag im Listenfeld aktiviert bzw. ausgewählt wurde, lässt
+sich über <span class=Schlssel><span style='font-size:11.0pt'>selectedIndex</span></span>
+seine Nummer ermitteln (gezählt wird ab 0).</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Bei Optionsfeldern und Kontrollfeldern muss man jede einzelne Komponente
+über <span class=Schlssel><span style='font-size:11.0pt'>checked</span></span> abfragen,
+ob sie aktiviert oder deaktiviert ist.</p>
+
+<h4>Aufgaben</h4>
+
+<p class=MsoNormal>1/2. Die Lösungen findest du in den Ordnern <span
+class=Dateiname>horoskop2</span> und <span class=Dateiname>horoskop3</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>9. Wer weiß was?</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die <span class=Schlssel><span style='font-size:11.0pt'>input</span></span>-Komponente
+in HTML ist ziemlich vielseitig. Bis jetzt kennen wir <span class=Schlssel><span
+style='font-size:11.0pt'>text</span></span> für ein einfaches Eingabefeld, <span
+class=Schlssel><span style='font-size:11.0pt'>radio</span></span> für ein
+Optionsfeld, <span class=Schlssel><span style='font-size:11.0pt'>checkbox</span></span>
+für ein Kontrollfeld und <span class=Schlssel><span style='font-size:11.0pt'>file</span></span>
+für ein Feld zum Laden einer Datei.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die <span class=Schlssel><span style='font-size:11.0pt'>style</span></span>-Option
+<span class=Schlssel><span style='font-size:11.0pt'>text-align</span></span>
+muss auf <span class=Schlssel><span style='font-size:11.0pt'>center</span></span>
+gesetzt werden.</p>
+
+<p class=Aufzhlung>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Zuerst braucht man ein Objekt vom Typ <span class=Schlssel><span
+style='font-size:11.0pt'>FileReader</span></span>, dann hat man Zugriff auf die
+Methode <span class=Schlssel><span style='font-size:11.0pt'>readAsText()</span></span>.
+Danach ist noch eine Ereignis-Funktion nötig, die das Ganze zum Abschluss
+bringt. In der kann man den Text anzeigen lassen oder einer anderen Variablen
+zuweisen.</p>
+
+<h4>Keine Aufgabe</h4>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>10. Spielen und Lernen</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Man setzt in die Textdatei unter jede Aufgabe die Nummer der richtigen Antwort.
+Beim Auslesen vergleicht man die Nummer des gewählten Elements mit dieser Zahl,
+z.B.:</p>
+
+<p class=Einschub><span class=Schlssel><span lang=EN-US style='font-size:11.0pt'>if
+(choice == Number(correct[current]) ...</span></span></p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Für mehrere richtige Antworten ist es sinnvoll, eine Kette von zwei
+verschiedenen Zeichen zu verwenden. Wichtig ist, darauf zu achten, dass der zu
+vergleichende <span class=Schlssel><span style='font-size:11.0pt'>correct</span></span>-String
+keine unsichtbaren Zeichen enthält.</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>im Ordner <span class=Dateiname>quiz6B</span> findest du das passende Programm.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ein Programm mit Kontrollboxen liegt im Ordner <span class=Dateiname>quiz6c</span>.
+Eine dazu eine passende Textdatei ist z.B. <span class=Dateiname>quizx.txt</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>11. <span lang=X-NONE>Jetzt wird es bunt</span></h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Der Ursprung des Koordinatensystems auf dem Bildschirm liegt links oben
+und beginnt dort mit x=0 und y=0.</p>
+
+<p class=Aufzhlung>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das Pärchen<span class=Schlssel><span style='font-size:11.0pt'> moveTo()/lineTo()</span></span>
+setzt Anfangs- und Endpunkt für das Zeichnen einer Linie, die hier immer eine
+Gerade ist. Die Parameter von <span class=Schlssel><span style='font-size:11.0pt'>rect()</span></span>
+sind der linke obere Eckpunkt sowie Breite und Höhe. Und bei <span
+class=Schlssel><span style='font-size:11.0pt'>arc()</span></span>werden
+Mittelpunkt und Radius sowie Anfangs- und Endwinkel benötigt (weil man damit ja
+sowohl einen vollen Kreis als auch einen Bogen zeichnen kann).</p>
+
+<p class=Aufzhlung>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ein Event-Handler stellt eine Verknüpfung zwischen einem Objekt und einem
+Ereignis her. Das betreffende Element kann z.B. auf Mausaktionen reagieren, und
+Aktionen auslösen, die in einer Ereignis-Funktion definiert sind.</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die Lösung ist im Ordner <span class=Dateiname>grafik6a</span> zu
+finden.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das Programm mit den bunten Quadraten liegt in <span class=Dateiname>grafik6b</span>.</p>
+
+<h2>12. Bilder lernen laufen</h2>
+
+<h4>Fragen</h4>
+
+<p class=Aufzhlung><span class=Schlssel><span style='font-size:11.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span>Entweder in
+der HMTL-Datei: Dort baut man eine <span class=Schlssel><span style='font-size:
+11.0pt'>img</span></span>-Element ein, mit <span class=Schlssel><span
+style='font-size:11.0pt'>scr</span></span> wird der Name der Bilddatei
+übernommen. Oder in JavaScript: Zuerst erzeugt man ein Bildobjekt: <span
+class=Schlssel><span style='font-size:11.0pt'>var image = new Image();</span></span>
+dann wird der Dateiname zugewiesen: <span class=Schlssel><span
+style='font-size:11.0pt'>image.src = &quot;ball1.png&quot;;</span></span></p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=Schlssel><span style='font-size:11.0pt'>setTimeout()</span></span>
+verzögert eine Funktion einmal, <span class=Schlssel><span style='font-size:
+11.0pt'>setInterval()</span></span> kann das mehrmals wiederholen (und muss mit
+<span class=Schlssel><span style='font-size:11.0pt'>clearInterval()</span></span>
+wiedergestoppt werden).</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Nach links und zurück geht es in <span class=Dateiname>Movie7</span>.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Und zum Tanzen wird die Figur in <span class=Dateiname>Movie8</span>
+gebracht.</p>
+
+<p class=Aufzhlung>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Das neue Monsterprojekt ist deutlich umfangreicher als die alten und
+befindet sich im Order <span class=Dateiname>Monster6</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>13. Buntes Trio</h2>
+
+<h4>Keine Fragen</h4>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die Lösung findest du im Ordner <span class=Dateiname>Wuerfel4</span>.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Hier liegt die Lösung in <span class=Dateiname>SSP3</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>14. Von der Kugel zum Player</h2>
+
+<h4>Keine Fragen</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Weil sich eine Figur auch über ein Spielfeld bewegen, das nicht nur eine
+Farbe, sondern eine Struktur hat, empfehlen sich Bilder mit transparentem
+Hintergrund, damit man den nicht auf dem Spielfeld sieht, sondern nur die Figur.</p>
+
+<p class=Aufzhlung>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Bei <span class=Schlssel><span style='font-size:11.0pt'>controlBorder()</span></span>
+wird immer nur ein Kontakt getestet, hier werden die Bedingungen durch »oder« (<span
+class=Schlssel><span style='font-size:11.0pt'>||</span></span>) verknüpft. Bei <span
+class=Schlssel><span style='font-size:11.0pt'>controlContact()</span></span> müssen
+alle Bedingen passen, damit ein Kontakt »gemeldet« wird. Hier werden die
+Bedingungen durch »und« (<span class=Schlssel><span style='font-size:11.0pt'>&amp;&amp;</span></span>)
+verknüpft.</p>
+
+<h4>Aufgaben</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Beide Schläger (Paddles) bewegen sich automatisch im Projekt <span
+class=Dateiname>Pong2A</span>. (Wenn du bei einem Schläger den zweiten Parameterwert
+von <span class=Schlssel><span style='font-size:11.0pt'>setSpeed()</span></span>
+negativ machst, erfolgt die Bewegung gegenläufig.)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>15. Ping und Pong</h2>
+
+<h4>Keine Fragen</h4>
+
+<h4>Keine Aufgaben</h4>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>16. <span lang=X-NONE>Schlange und Käfer</span></h2>
+
+<h4>Frage</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Hier muss am <em>Anfang</em> hinzugefügt und am <em>Ende</em> angehängt
+werden, daher kommt nur das Paar <span class=Schlssel><span style='font-size:
+11.0pt'>unshift-pop</span></span> infrage.</p>
+
+<h4>Aufgabe</h4>
+
+<p class=Aufzhlung>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Die neue »Käfer-Lösung« ist eine Erweiterung von <span class=Schlssel><span
+style='font-size:11.0pt'>chooseLocation()</span></span> und im Ordner <span
+style='text-transform:uppercase'>snake5</span> zu finden.</p>
+
+<p class=Aufzhlung style='margin-left:0cm;text-indent:0cm'>&nbsp;</p>
+
+<h2>17. <span lang=X-NONE>Dodge oder Hit?</span></h2>
+
+<h4>Keine Fragen</h4>
+
+<h4>Aufgabe</h4>
+
+<p class=Aufzhlung style='margin-top:0cm'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Im Ordner DODGER4 ist das Programm, in dem man die Figur bei einem
+Treffer leiden sieht.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

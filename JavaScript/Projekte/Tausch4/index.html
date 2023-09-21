@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+
+  // Globale Variablen
+  var text1, text2;
+
+  // Tauschfunktion
+  function exchange() {
+    var tausch = text1;
+    text1 = text2;
+    text2 = tausch;
+  }
+
+  // Hauptprogramm
+  text1 = window.prompt("Gib ein Wort ein:", "");
+  text2 = window.prompt("Und noch eins:", "");
+  document.write("Vorher: " + text1 + " und " + text2 + "<br>");
+  exchange();
+  document.write("Nachher: " + text1 + " und " + text2);
+</script>

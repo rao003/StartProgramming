@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>  
+    <style>
+      #BTN1 {
+        width: 150px; height: 25px; top: 260px; left: 25px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 150px; height: 25px; top: 260px; left: 185px;
+        position: fixed;
+      }
+      #BTN3 {
+        width: 150px; height: 25px; top: 260px; left: 345px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="500" height="300" style="border:1px solid gray"></canvas>
+    <button id="BTN1"; onclick="showImage()">Erscheinen</button>
+    <button id="BTN2"; onclick="moveImage()">Bewegen</button>
+    <button id="BTN3"; onclick="hideImage()">Verschwinden</button>
+
+    <script src="movie.js">
+    </script>
+
+  </body>
+</html>

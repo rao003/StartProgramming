@@ -1,0 +1,19 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  // alter
+  window.alert("Hallo, ich bin dein PC und nicht mal 5 Jahre alt.");
+  var alter = Number(window.prompt("Wie alt bist du eigentlich?", ""));
+  if (alter > 0 && alter <= 15)
+    document.write("Dann bist du ja noch grün hinter den Ohren");
+  else if (alter > 15 && alter <= 25)
+    document.write("Also noch schön knackig und frisch");
+  else if (alter > 25 && alter <= 45)
+    document.write("Also bestes Mittelalter");
+  else if (alter > 45 && alter <= 65)
+    document.write("Auf dem Weg zur Rente");
+  else if (alter > 65 && alter <= 85)
+    document.write("Eigentlich schon unbezahlbar für die Jugend");
+  else
+    document.write("Da bist du ja schon " + (alter-85) + " Jahre überfällig");
+</script>

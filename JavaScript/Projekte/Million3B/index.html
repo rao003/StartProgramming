@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  var kapital = 
+  Number(window.prompt("Wie viel Geld willst du anlegen: ", ""));
+  var prozent = 
+  Number(window.prompt("Wie hoch soll der Zinssatz sein: ", ""));
+  var laufzeit = 
+  Number(window.prompt("Und wie lange willst du warten: ", ""));
+  var zinsen;
+  do {
+    zinsen  = kapital * prozent / 100;
+    kapital = kapital + zinsen;
+    laufzeit--;
+  } while (laufzeit > 0);
+  document.write(" Das sind " + Math.floor(kapital) + " Euro.<br>");
+  if (kapital < 1000000)
+    document.write("Damit bist du aber noch kein Millionär!");
+  else
+    document.write("Willkommen im Club der Millionäre!");
+</script>

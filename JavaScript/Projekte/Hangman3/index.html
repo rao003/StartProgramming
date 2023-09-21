@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+      #LST {
+        width: 250px; height: 30px; top: 50px; left: 220px;
+        position: fixed; border-style:solid;        
+        padding: 5px 5px; text-align: center;
+      }
+      #INP {
+        width: 60px; height: 60px; top: 115px; left: 275px;
+        position: fixed; border-style:solid;
+        text-align: center;
+      }
+      #BTN1 {
+        width: 65px; height: 65px; top: 115px; left: 360px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 130px; height: 30px; top: 200px; left: 290px;
+        position: fixed;
+      }
+      #DAT {
+        width: 320px; height: 30px; top: 260px; left: 170px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="500" height="300" style="border:1px solid gray"></canvas>
+    <fieldset id="LST">
+      <label id="LBL"; style="font-size:24px"></label>
+    </fieldset>
+    <input id="INP"; type="text" style="font-size:36px">
+    <button id="BTN1"; onclick="testLetter()">OK</button>
+    <button id="BTN2"; onclick="newWord()">Neues Wort</button>
+    <!-- Datei öffnen -->
+    <input id="DAT" type="file"; onchange="readFile(this)">   
+    
+    <script src="game.js">
+    </script>
+  </body>
+</html>

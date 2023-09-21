@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <canvas id="PIX" width="600" height="400"></canvas>
+
+    <script>
+      "use strict";
+      var canvas = document.getElementById("PIX");
+      var context = canvas.getContext("2d");
+      context.arc(300, 200, 190, 0, 2*Math.PI);
+      context.rect(10, 10, 580, 380);
+      context.stroke();
+    </script>
+
+  </body>
+</html>

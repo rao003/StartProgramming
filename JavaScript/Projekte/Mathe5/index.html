@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<script>
+  // Zufalls-Mathe
+  "use strict";
+  var zahl1 = Math.floor(Math.random()*50);
+  var zahl2 = Math.floor(Math.random()*19+1);
+  var operation = Math.floor(Math.random()*4);
+  var ergebnis, op;
+  if (operation == 0) {
+    ergebnis = zahl1 + zahl2;
+    op = " + ";
+  }
+  if (operation == 1) {
+    ergebnis = zahl1 - zahl2;
+    op = " - ";
+  }
+  if (operation == 2) {
+    ergebnis = zahl1 * zahl2;
+    op = " * ";
+  }
+  if (operation == 3) {
+    ergebnis = zahl1 / zahl2;
+    op = " / ";
+  }
+  window.alert("Die Aufgabe lautet:  " + zahl1 + op + zahl2 + " =");
+  var eingabe = Number(window.prompt("Dein Ergebnis: ", ""));
+  if (eingabe == ergebnis)
+    document.write("Richtig");
+  else
+    document.write("Ergebnis = " + ergebnis);
+</script>

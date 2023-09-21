@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <style>
+      #LBL {
+        width: 375px; height: 20px; top: 20px; left: 50px;
+        position: fixed; padding: 5px 10px;
+        text-align: center;
+      }
+      #LST {
+        width: 400px; height: 55px; top: 70px; left: 50px;
+        position: fixed;
+      }
+      #BTN { 
+        width: 70px; height: 30px; top: 150px; left: 50px; 
+        position: fixed;
+      }
+      #INP {
+        width: 400px; height: 30px; top: 200px; left: 50px;
+        position: fixed;
+      }
+      #NEW { 
+        width: 100px; height: 30px; top: 150px; left: 130px; 
+        position: fixed;
+      }
+      #RES { 
+        width: 200px; height: 30px; top: 155px; left: 270px; 
+        position: fixed;
+      }
+    </style>
+
+    <fieldset id="LBL">
+      <label></label>
+    </fieldset>
+    <select ID="LST" size="6">
+      <option></option>
+      <option></option>
+      <option></option>
+    </select>
+    <button id="BTN"; onclick="itemClick()">OK</button>
+    <!-- Datei öffnen -->
+    <input id="INP" type="file" onchange="readFile(this)">
+    <!-- Neue Aufgabe -->
+    <button id="NEW"; onclick="newClick()">Neue Frage</button>
+    <!-- Spielstand -->
+    <label id="RES"></label>
+    
+    <script src="quiz.js">
+    </script>
+
+  </body>
+</html>

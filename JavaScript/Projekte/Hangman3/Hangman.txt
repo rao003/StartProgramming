@@ -1,0 +1,17 @@
+hangman
+function
+case
+switch
+class
+true
+false
+window
+document
+canvas
+length
+math
+onclick
+random
+button
+label
+input

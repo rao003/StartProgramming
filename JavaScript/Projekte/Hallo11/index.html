@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>  
+    <style>
+      #LBL {
+        width: 250px; height: 30px; top: 20px; left: 150px;
+        position: fixed;
+      }
+      #LBLX {
+        width: 250px; height: 30px; top: 200px; left: 150px;
+        position: fixed;
+      }
+      #LST {
+        width: 110px; height: 120px; top: 50px; left: 135px;
+        position: fixed;
+      }
+      #CHK {
+        width: 85px; height: 60px; top: 50px; left: 280px;
+        position: fixed;
+      }
+      #BTN {
+        width: 110px; height: 30px; top: 155px; left: 283px;
+        position: fixed;
+      }
+    </style>
+
+    <label id="LBL">Hallo, wie geht's?</label> 
+    <label id="LBLX"></label> 
+    <fieldset id="LST">
+      <input id="Nr1" type="radio" name="choice">
+      <label for="Nr1"> Prima<br></label>
+      <input id="Nr2" type="radio" name="choice">
+      <label for="Nr2"> Gut<br></label>
+      <input id="Nr3" type="radio" name="choice">
+      <label for="Nr3"> Schlecht<br></label>
+      <input id="Nr4" type="radio" name="choice">
+      <label for="Nr4"> Miserabel<br></label>
+      <input id="Nr5" type="radio" name="choice">
+      <label for="Nr5"> So lala<br></label>
+      <input id="Nr6" type="radio" name="choice">
+      <label for="Nr6"> Sag ich nicht</label>
+    </fieldset>
+    <fieldset id="CHK">
+      <input id="Nr7" type="checkbox" name="scope">
+      <label for="Nr7"> Seele<br></label>
+      <input id="Nr8" type="checkbox" name="scope">
+      <label for="Nr8"> Geist<br></label>
+      <input id="Nr9" type="checkbox" name="scope">
+      <label for="Nr9"> Körper<br></label>
+    </fieldset>
+    <button id="BTN" onclick="itemClick()">OK</button>
+    
+    <script src="hallo.js">
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>  
+    <style>
+      #LBL1 {
+        width: 400px; height: 25px; top: 25px; left: 60px;
+        position: fixed; text-align: center;
+      }
+      #LBL2 {
+        width: 150px; height: 25px; top: 265px; left: 30px;
+        position: fixed;
+      }
+      #LBL3 {
+        width: 180px; height: 25px; top: 265px; left: 330px;
+        position: fixed;
+      }
+      #BTN {
+        width: 100px; height: 25px; top: 265px; left: 200px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="500" height="300" style="border:1px solid gray"></canvas>
+    <label id="LBL1">Lass uns würfeln!</label>
+    <label id="LBL2">Dein Spielstand:  0/0</label>
+    <label id="LBL3">Spielstand Gegner:  0/0</label>
+    <button id="BTN"; onclick="showImage()">Neues Spiel</button>
+    
+    <script src="game.js">
+    </script>
+
+  </body>
+</html>

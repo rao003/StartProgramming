@@ -1,0 +1,22 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+
+  // Globale Variablen
+  var zahl1 = {item: 0};
+  var zahl2 = {item: 0};
+
+  // Tauschfunktion
+  function exchange(x1, x2) {
+    var tausch = x1.item;
+    x1.item = x2.item;
+    x2.item = tausch;
+  }
+
+  // Hauptprogramm
+  zahl1.item = Number(window.prompt("Gib eine Zahl ein:", ""));
+  zahl2.item = Number(window.prompt("Und noch eine:", ""));
+  document.write("Vorher: " + zahl1.item + " und " + zahl2.item + "<br>");
+  exchange(zahl1, zahl2);
+  document.write("Nachher: " + zahl1.item + " und " + zahl2.item);
+</script>

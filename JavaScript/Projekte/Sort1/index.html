@@ -1,0 +1,32 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+
+  // Globale Variablen
+  var liste = [];
+  var zufall;
+
+  //Funktions-Definition
+  function bubblesort(x, index) {
+    var tausch;
+    for (var i = 0; i < index; i++) {
+      for (var j = 0; j< index-i-1; j++) {
+        if (x[j] > x[j+1]) {
+          tausch = x[j];
+          x[j]= x[j+1];
+          x[j+1]= tausch;
+        }
+      }
+    }
+  }
+
+  // Hauptprogramm
+  for (var nr = 0; nr < 100; nr++) {
+    liste[nr] = Math.floor(Math.random()*49+1);
+    document.write(liste[nr] + " ; ");
+  }
+  document.write("<br>Sortiert:<br>");
+  bubblesort(liste,100);
+  for (var nr = 0; nr < 100; nr++)
+  document.write(liste[nr] + " ; ");
+</script>

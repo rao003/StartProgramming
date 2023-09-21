@@ -1,0 +1,16 @@
+<meta charset="utf-8" />
+<script>
+  "use strict";
+  var note;
+  var zahl = Number(window.prompt("Gib eine Zahl von 1 bis 6 ein:", ""));
+  switch(zahl) {
+    case 1: note = "sehr gut"; break;
+    case 2: note = "gut"; break;
+    case 3: note = "befriedigend"; break;
+    case 4: note = "ausreichend"; break;
+    case 5: note = "mangelhaft"; break;
+    case 6: note = "ungenügend"; break;
+    default: note = "unzulässig";
+  }
+  document.write(note);
+</script>

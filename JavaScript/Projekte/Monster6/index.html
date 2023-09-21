@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+      #LST {
+        width: 150px; height: 65px; top: 30px; left: 20px;
+        position: fixed; border-style:solid;        
+        padding: 5px 5px; text-align: center;
+      }
+      #LBL1 {
+        width: 120x; height: 25px; top: 40px; left: 30px;
+        position: fixed;
+      }
+      #LBL2 {
+        width: 120x; height: 25px; top: 60px; left: 30px;
+        position: fixed;
+      }
+      #LBL3 {
+        width: 120x; height: 25px; top: 80px; left: 30px;
+        position: fixed;
+      }
+      #BTN1 {
+        width: 160px; height: 25px; top: 130px; left: 25px;
+        position: fixed;
+      }
+      #BTN2 {
+        width: 160px; height: 25px; top: 170px; left: 25px;
+        position: fixed;
+      }
+      #BTN3 {
+        width: 160px; height: 25px; top: 210px; left: 25px;
+        position: fixed;
+      }
+    </style>
+
+    <canvas id="PIX" width="400" height="250" style="border:1px solid gray"></canvas>
+    <fieldset id="LST">
+      <label id="LBL1"></label>
+      <label id="LBL2"></label>
+      <label id="LBL3"></label>
+    </fieldset>    
+    <button id="BTN1"; onclick="showMonster()">Monster</button>
+    <button id="BTN2"; onclick="showGMonster()">Geistes-Monster</button>
+    <button id="BTN3"; onclick="showSMonster()">Seelen-Monster</button>
+
+    <script src="monster.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
