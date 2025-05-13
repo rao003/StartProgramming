@@ -1,3 +1,15 @@
+# How to Use
+#Install required packages (if not done yet):
+
+
+# pip install requests beautifulsoup4 pandas openpyxl
+
+# 
+# 
+# 
+# 
+# 
+# 
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
