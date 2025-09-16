@@ -1,0 +1,30 @@
+User Guide for Bridge Selection Tool
+
+Overview:
+The Bridge Selection Tool is a graphical user interface (GUI) application designed to assist users in selecting the appropriate bridge configuration based on their specific requirements. This tool utilizes predefined bridge configurations to provide accurate recommendations.
+
+How to Use the GUI:
+
+1. Launch the Application:
+   - Run the `gui.py` script located in the `src` directory to start the application.
+
+2. Input Requirements:
+   - Enter the required span of the bridge in meters in the designated input field.
+   - Enter the required load capacity in tons in the corresponding input field.
+
+3. Submit the Input:
+   - Click the "Calculate" button to submit your requirements. The application will process the input and determine the best bridge configuration.
+
+4. View Results:
+   - The recommended bridge configuration will be displayed on the screen, along with the number of panels required and an estimated component list.
+   - If no valid configuration is found, an appropriate message will be shown.
+
+5. Additional Information:
+   - The application may provide further details about the selected configuration, including specifications and potential limitations.
+
+Interpreting the Results:
+- The recommended configuration will be presented in a format that includes the type of bridge (e.g., Single-Single, Double-Double) and the number of panels required.
+- The component list will detail the quantities of various components needed for the construction of the selected bridge.
+
+Support:
+For any issues or questions regarding the Bridge Selection Tool, please refer to the README.md file for additional documentation or contact the project maintainer.
